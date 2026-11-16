@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%" style="background:#0a1210; font-family:'JetBrains Mono', monospace;">
+  <defs>
+    <pattern id="graph-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#132c24" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="#0a1210"/>
+  <rect width="1200" height="675" fill="url(#graph-grid)" opacity="0.6"/>
+
+  <!-- Top bar -->
+  <rect x="50" y="40" width="1100" height="60" rx="8" fill="#0d281f" stroke="#10b981" stroke-width="2"/>
+  <circle cx="80" cy="70" r="10" fill="#10b981"/>
+  <text x="110" y="76" fill="#10b981" font-size="16" font-weight="bold" letter-spacing="2">OUTDOOR SPATIAL COMPUTING // UIKA CAMPUS FACULTY GRAPH</text>
+  <text x="910" y="76" fill="#34d399" font-size="14">TOPOLOGY: FACULTY GROUNDS</text>
+
+  <!-- Left: Outdoor Campus Map Simulation -->
+  <g transform="translate(50, 130)">
+    <rect width="680" height="495" rx="16" fill="#0c1e17" stroke="#164332" stroke-width="2"/>
+    <rect x="0" y="0" width="680" height="40" rx="14" fill="#113325"/>
+    <circle cx="25" cy="20" r="5" fill="#ef4444"/>
+    <circle cx="45" cy="20" r="5" fill="#f59e0b"/>
+    <circle cx="65" cy="20" r="5" fill="#10b981"/>
+    <text x="90" y="24" fill="#6ee7b7" font-size="11">viewport://uika-campus-outdoor-grounds.geojson</text>
+
+    <!-- Faculty Buildings Layout (Top View / Isometric) -->
+    
+    <!-- Building 1: Main Gate & Plaque (Origin) -->
+    <rect x="40" y="380" width="130" height="80" rx="8" fill="#133d28" stroke="#10b981" stroke-width="2"/>
+    <text x="50" y="415" fill="#34d399" font-size="11" font-weight="bold">MAIN GATE</text>
+    <text x="50" y="435" fill="#a7f3d0" font-size="10">Plaque OCR Anchor</text>
+    <circle cx="170" cy="420" r="7" fill="#10b981"/>
+
+    <!-- Building 2: Masjid Al-Hijri -->
+    <rect x="230" y="360" width="140" height="90" rx="8" fill="#123825" stroke="#34d399" stroke-width="1.5"/>
+    <text x="240" y="400" fill="#ffffff" font-size="11" font-weight="bold">MASJID AL-HIJRI</text>
+    <text x="240" y="420" fill="#86efac" font-size="10">Campus Mosque</text>
+
+    <!-- Building 3: Gedung Rektorat -->
+    <rect x="80" y="190" width="160" height="90" rx="8" fill="#123825" stroke="#34d399" stroke-width="1.5"/>
+    <text x="95" y="230" fill="#ffffff" font-size="11" font-weight="bold">GEDUNG REKTORAT</text>
+    <text x="95" y="250" fill="#86efac" font-size="10">Administration Office</text>
+
+    <!-- Building 4: Perpustakaan Pusat -->
+    <rect x="290" y="210" width="150" height="85" rx="8" fill="#123825" stroke="#34d399" stroke-width="1.5"/>
+    <text x="305" y="248" fill="#ffffff" font-size="11" font-weight="bold">PERPUSTAKAAN</text>
+    <text x="305" y="268" fill="#86efac" font-size="10">Central Library</text>
+
+    <!-- Building 5: Fakultas Teknik & Sains (Target) -->
+    <rect x="480" y="80" width="170" height="100" rx="8" fill="#1e4620" stroke="#ef4444" stroke-width="2.5"/>
+    <text x="495" y="125" fill="#ffffff" font-size="12" font-weight="bold">FAKULTAS TEKNIK</text>
+    <text x="495" y="145" fill="#fca5a5" font-size="11">Dan Sains (FTKI)</text>
+    <circle cx="560" cy="180" r="8" fill="#ef4444"/>
+
+    <!-- Building 6: Fakultas Ekonomi & Bisnis (FEB) -->
+    <rect x="490" y="330" width="150" height="90" rx="8" fill="#123825" stroke="#34d399" stroke-width="1.5"/>
+    <text x="505" y="370" fill="#ffffff" font-size="11" font-weight="bold">FAKULTAS EKONOMI</text>
+    <text x="505" y="390" fill="#86efac" font-size="10">Bisnis (FEB)</text>
+
+    <!-- Pedestrian Campus Walkways & Graph Nodes -->
+    <line x1="170" y1="420" x2="230" y2="330" stroke="#164e32" stroke-width="6"/>
+    <line x1="230" y1="330" x2="380" y2="330" stroke="#164e32" stroke-width="6"/>
+    <line x1="380" y1="330" x2="480" y2="240" stroke="#164e32" stroke-width="6"/>
+    <line x1="480" y1="240" x2="560" y2="180" stroke="#164e32" stroke-width="6"/>
+
+    <!-- Bézier Curved Pedestrian AR Ribbon -->
+    <path d="M 170 420 Q 200 350 250 330 T 380 330 T 470 270 T 560 180" fill="none" stroke="#22c55e" stroke-width="4.5"/>
+    
+    <!-- Floating AR Directional Pin -->
+    <rect x="500" y="55" width="130" height="26" rx="6" fill="#b91c1c" stroke="#f87171" stroke-width="1.5"/>
+    <text x="512" y="72" fill="#ffffff" font-size="10" font-weight="bold">DESTINATION ↗</text>
+
+    <!-- Legend -->
+    <rect x="25" y="445" width="230" height="35" rx="6" fill="#042f1a" stroke="#10b981" stroke-width="1"/>
+    <circle cx="40" cy="462" r="4" fill="#22c55e"/>
+    <text x="52" y="466" fill="#ffffff" font-size="10">Green: Paved Walkway Bézier AR Path</text>
+  </g>
+
+  <!-- Right: Technical Details & Metrics Panel -->
+  <g transform="translate(760, 130)">
+    <!-- Box 1: A* Walkway Heuristic -->
+    <rect width="390" height="235" rx="16" fill="#0c1f17" stroke="#10b981" stroke-width="2"/>
+    <rect x="0" y="0" width="390" height="38" rx="14" fill="#133d28"/>
+    <text x="20" y="24" fill="#34d399" font-size="12" font-weight="bold">OUTDOOR WALKWAY PATHFINDING</text>
+
+    <text x="20" y="70" fill="#a7f3d0" font-size="12">Campus Inter-Building Routing Heuristic</text>
+    <text x="20" y="100" fill="#e2e8f0" font-size="11">• Graph: Walkway intersections &amp; gates</text>
+    <text x="20" y="125" fill="#e2e8f0" font-size="11">• Edge weight: Pedestrian walkway meters</text>
+    <text x="20" y="150" fill="#e2e8f0" font-size="11">• Avoids non-pedestrian &amp; vehicle roads</text>
+    <text x="20" y="175" fill="#e2e8f0" font-size="11">• Fast rerouting if pedestrian takes wrong path</text>
+
+    <rect x="20" y="195" width="350" height="26" rx="6" fill="#065f46"/>
+    <text x="30" y="212" fill="#34d399" font-size="10">OPTIMAL INTER-BUILDING PATH COMPUTED</text>
+
+    <!-- Box 2: Bézier Smoothing -->
+    <g transform="translate(0, 260)">
+      <rect width="390" height="235" rx="16" fill="#0c1f17" stroke="#34d399" stroke-width="2"/>
+      <rect x="0" y="0" width="390" height="38" rx="14" fill="#133d28"/>
+      <text x="20" y="24" fill="#34d399" font-size="12" font-weight="bold">BÉZIER TRAJECTORY CURVE ENGINE</text>
+
+      <text x="20" y="70" fill="#cbd5e1" font-size="11" font-weight="bold">Footpath Curvature Smoothing</text>
+      <text x="20" y="90" fill="#94a3b8" font-size="10">Follows natural curves of paved campus walkways</text>
+
+      <text x="20" y="125" fill="#cbd5e1" font-size="11" font-weight="bold">Outdoor AR Visual Ribbon</text>
+      <text x="20" y="145" fill="#94a3b8" font-size="10">Projects 3D glowing path on grass &amp; pavement</text>
+
+      <text x="20" y="180" fill="#cbd5e1" font-size="11" font-weight="bold">Building Horizon Anchors</text>
+      <text x="20" y="200" fill="#94a3b8" font-size="10">Floating destination tags visible from distance</text>
+    </g>
+  </g>
+</svg>

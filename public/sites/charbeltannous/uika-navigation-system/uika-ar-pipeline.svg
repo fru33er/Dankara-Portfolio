@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%" style="background:#09120e; font-family:'JetBrains Mono', monospace;">
+  <defs>
+    <pattern id="uika-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#132e22" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="#09120e"/>
+  <rect width="1200" height="675" fill="url(#uika-grid)" opacity="0.6"/>
+
+  <!-- Top bar -->
+  <rect x="50" y="40" width="1100" height="60" rx="8" fill="#0d261a" stroke="#10b981" stroke-width="2"/>
+  <circle cx="80" cy="70" r="10" fill="#10b981"/>
+  <text x="110" y="76" fill="#10b981" font-size="16" font-weight="bold" letter-spacing="2">UIKA NAVIGATOR // OUTDOOR AR CAMPUS WAYFINDING PIPELINE</text>
+  <text x="920" y="76" fill="#6ee7b7" font-size="14">SCOPE: OUTDOOR GROUNDS</text>
+
+  <!-- Step 1: Camera & ML Kit OCR -->
+  <g transform="translate(60, 140)">
+    <rect width="240" height="220" rx="14" fill="#0f291c" stroke="#10b981" stroke-width="2"/>
+    <rect x="0" y="0" width="240" height="38" rx="12" fill="#133d28"/>
+    <text x="16" y="24" fill="#34d399" font-size="12" font-weight="bold">PHASE 01 // POSE ALIGNMENT</text>
+    
+    <text x="16" y="70" fill="#ffffff" font-size="15" font-weight="bold">ML Kit Text Recognition</text>
+    <text x="16" y="95" fill="#a7f3d0" font-size="11">Building Plaque OCR</text>
+    
+    <text x="16" y="130" fill="#6ee7b7" font-size="11">• Scans Faculty Plaques &amp; Signs</text>
+    <text x="16" y="152" fill="#6ee7b7" font-size="11">• Verified vs Firestore Graph</text>
+    <text x="16" y="174" fill="#6ee7b7" font-size="11">• Instant Compass &amp; Coordinate Lock</text>
+    <text x="16" y="196" fill="#6ee7b7" font-size="11">• Sub-Meter Campus Positioning</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <polygon points="325,245 338,250 325,255" fill="#10b981"/>
+
+  <!-- Step 2: A* Graph Engine -->
+  <g transform="translate(360, 140)">
+    <rect width="240" height="220" rx="14" fill="#0f291c" stroke="#10b981" stroke-width="2"/>
+    <rect x="0" y="0" width="240" height="38" rx="12" fill="#133d28"/>
+    <text x="16" y="24" fill="#34d399" font-size="12" font-weight="bold">PHASE 02 // WALKWAY GRAPH</text>
+    
+    <text x="16" y="70" fill="#ffffff" font-size="15" font-weight="bold">A* Pathfinding Algorithm</text>
+    <text x="16" y="95" fill="#a7f3d0" font-size="11">Inter-Building Routing</text>
+    
+    <text x="16" y="130" fill="#6ee7b7" font-size="11">• Outdoor Pedestrian Walkways</text>
+    <text x="16" y="152" fill="#6ee7b7" font-size="11">• Faculty Gate to Gate Links</text>
+    <text x="16" y="174" fill="#6ee7b7" font-size="11">• Shortest Euclidean Path</text>
+    <text x="16" y="196" fill="#6ee7b7" font-size="11">• Fast Dynamic Recalculation</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <polygon points="625,245 638,250 625,255" fill="#10b981"/>
+
+  <!-- Step 3: Bézier Curve Smoothing -->
+  <g transform="translate(660, 140)">
+    <rect width="230" height="220" rx="14" fill="#0f291c" stroke="#10b981" stroke-width="2"/>
+    <rect x="0" y="0" width="230" height="38" rx="12" fill="#133d28"/>
+    <text x="16" y="24" fill="#34d399" font-size="12" font-weight="bold">PHASE 03 // TRAJECTORY</text>
+    
+    <text x="16" y="70" fill="#ffffff" font-size="15" font-weight="bold">Bézier Splines</text>
+    <text x="16" y="95" fill="#a7f3d0" font-size="11">Walkway Path Smoothing</text>
+    
+    <text x="16" y="130" fill="#6ee7b7" font-size="11">• Eliminates Rigid Turn Angles</text>
+    <text x="16" y="152" fill="#6ee7b7" font-size="11">• Follows Paved Campus Paths</text>
+    <text x="16" y="174" fill="#6ee7b7" font-size="11">• Organic Visual Guide Curves</text>
+    <text x="16" y="196" fill="#6ee7b7" font-size="11">• Continuous Walking Vector</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <polygon points="915,245 928,250 915,255" fill="#10b981"/>
+
+  <!-- Step 4: SceneView AR Render -->
+  <g transform="translate(940, 140)">
+    <rect width="210" height="220" rx="14" fill="#0f291c" stroke="#10b981" stroke-width="2"/>
+    <rect x="0" y="0" width="210" height="38" rx="12" fill="#133d28"/>
+    <text x="16" y="24" fill="#34d399" font-size="12" font-weight="bold">PHASE 04 // 3D AR RENDER</text>
+    
+    <text x="16" y="70" fill="#ffffff" font-size="15" font-weight="bold">SceneView 3D</text>
+    <text x="16" y="95" fill="#a7f3d0" font-size="11">Outdoor AR Overlay</text>
+    
+    <text x="16" y="130" fill="#6ee7b7" font-size="11">• Floating Walkway Arrows</text>
+    <text x="16" y="152" fill="#6ee7b7" font-size="11">• Faculty Landmark Pins</text>
+    <text x="16" y="174" fill="#6ee7b7" font-size="11">• 60 FPS Outdoor Tracking</text>
+    <text x="16" y="196" fill="#6ee7b7" font-size="11">• Building Name Holograms</text>
+  </g>
+
+  <!-- Bottom Panel: System Architecture -->
+  <g transform="translate(60, 400)">
+    <rect width="1090" height="220" rx="16" fill="#0c1f15" stroke="#10b981" stroke-width="2"/>
+    <rect x="0" y="0" width="1090" height="40" rx="12" fill="#133824"/>
+    <text x="24" y="26" fill="#34d399" font-size="14" font-weight="bold">OUTDOOR WAYFINDING SYSTEM // CLEAN ARCHITECTURE + MVVM + DAGGER-HILT</text>
+
+    <!-- Architecture Box 1: Admin App -->
+    <rect x="30" y="65" width="320" height="130" rx="10" fill="#132f20" stroke="#1e5437" stroke-width="1.5"/>
+    <text x="45" y="95" fill="#6ee7b7" font-size="12" font-weight="bold">ADMIN APP: CAMPUS MAPPING</text>
+    <text x="45" y="125" fill="#ffffff" font-size="12">• Plaque &amp; Building Anchor Tagger</text>
+    <text x="45" y="150" fill="#ffffff" font-size="12">• Walkway Graph Editor</text>
+    <text x="45" y="175" fill="#34d399" font-size="11">Direct Sync to Cloud Firestore</text>
+
+    <!-- Architecture Box 2: User App -->
+    <rect x="380" y="65" width="320" height="130" rx="10" fill="#132f20" stroke="#1e5437" stroke-width="1.5"/>
+    <text x="395" y="95" fill="#6ee7b7" font-size="12" font-weight="bold">STUDENT APP: WAYFINDER</text>
+    <text x="395" y="125" fill="#ffffff" font-size="12">• Faculty &amp; Facility Search</text>
+    <text x="395" y="150" fill="#ffffff" font-size="12">• Real-Time Outdoor AR Guidance</text>
+    <text x="395" y="175" fill="#34d399" font-size="11">Offline Fallback via Room SQLite</text>
+
+    <!-- Architecture Box 3: Performance -->
+    <rect x="730" y="65" width="330" height="130" rx="10" fill="#132f20" stroke="#1e5437" stroke-width="1.5"/>
+    <text x="745" y="95" fill="#6ee7b7" font-size="12" font-weight="bold">PERFORMANCE &amp; RELIABILITY</text>
+    <text x="745" y="125" fill="#ffffff" font-size="12">• Non-blocking OCR on Background</text>
+    <text x="745" y="150" fill="#ffffff" font-size="12">• StateFlow Reactive Observables</text>
+    <text x="745" y="175" fill="#34d399" font-size="11">Smooth Outdoor Camera Tracking</text>
+  </g>
+</svg>

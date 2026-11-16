@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Website Clone",
-  description: "Pixel-perfect website clone",
+  title: "Raka Andhika — Software Engineer",
+  description:
+    "Software engineer in Montreal, Canada (Concordia B.Eng. '26, incoming McGill M.Eng.), open to roles in Canada and the Middle East. Builds full-stack web, mobile and applied-ML products; technical co-founder of StreetCore, maker of Spolio.",
+  openGraph: {
+    title: "Raka Andhika — Software Engineer",
+    description:
+      "Software engineer in Montreal, Canada (Concordia B.Eng. '26, incoming McGill M.Eng.), open to roles in Canada and the Middle East. Builds full-stack web, mobile and applied-ML products; technical co-founder of StreetCore, maker of Spolio.",
+    url: "https://charbeltannous.com/",
+    siteName: "Raka <Andhika>p</Andhika>",
+    type: "website",
+  },
+  icons: {
+    icon: "/sites/charbeltannous/Group 4.svg",
+  },
 };
 
 export default function RootLayout({
@@ -25,9 +26,20 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
+      className="h-full antialiased"
+      data-theme="yellow"
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem("raka_theme");if(t==="yellow"||t==="mono"||t==="blue"){document.documentElement.setAttribute("data-theme",t);}}catch(e){}})();`,
+          }}
+        />
+      </head>
+      <body className="min-h-full flex flex-col bg-page text-heading selection:bg-heading selection:text-page font-body">
+        {children}
+      </body>
     </html>
   );
 }

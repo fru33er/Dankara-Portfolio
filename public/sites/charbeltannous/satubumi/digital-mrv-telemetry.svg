@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%" style="background:#0b0f14; font-family:'JetBrains Mono', monospace;">
+  <defs>
+    <pattern id="grid-mrv" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#172433" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="#0b0f14"/>
+  <rect width="1200" height="675" fill="url(#grid-mrv)" opacity="0.6"/>
+
+  <!-- Top bar -->
+  <rect x="50" y="40" width="1100" height="60" rx="8" fill="#132338" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="80" cy="70" r="10" fill="#38bdf8"/>
+  <text x="110" y="76" fill="#38bdf8" font-size="16" font-weight="bold" letter-spacing="2">DIGITAL MRV // MULTI-LAYER SPATIAL MAP &amp; FIELD ALERTS</text>
+  <text x="960" y="76" fill="#7dd3fc" font-size="14">LAYER: 7 ACTIVE GIS</text>
+
+  <!-- Left: Mock Map View -->
+  <g transform="translate(50, 130)">
+    <rect width="680" height="495" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+    
+    <!-- Top simulated toolbar -->
+    <rect x="0" y="0" width="680" height="40" rx="14" fill="#1e293b"/>
+    <circle cx="25" cy="20" r="5" fill="#ef4444"/>
+    <circle cx="45" cy="20" r="5" fill="#f59e0b"/>
+    <circle cx="65" cy="20" r="5" fill="#10b981"/>
+    <text x="90" y="24" fill="#94a3b8" font-size="11">viewport://kalimantan-restoration-project-plot-a.geojson</text>
+
+    <!-- Map layers visualization -->
+    <path d="M 120 180 Q 250 100 450 140 T 600 280 T 480 430 T 200 410 Z" fill="#166534" fill-opacity="0.3" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="6 3"/>
+    
+    <path d="M 220 230 Q 320 180 420 220 T 450 330 T 300 370 Z" fill="#0369a1" fill-opacity="0.2" stroke="#38bdf8" stroke-width="2"/>
+
+    <!-- Permanent plot points -->
+    <circle cx="260" cy="260" r="6" fill="#eab308"/>
+    <circle cx="340" cy="220" r="6" fill="#eab308"/>
+    <circle cx="380" cy="300" r="6" fill="#eab308"/>
+    <circle cx="300" cy="340" r="6" fill="#eab308"/>
+    <circle cx="420" cy="260" r="6" fill="#eab308"/>
+
+    <!-- Patrol Path -->
+    <path d="M 160 380 L 260 260 L 340 220 L 380 300 L 420 260 L 520 320" fill="none" stroke="#f43f5e" stroke-width="2.5"/>
+
+    <!-- Map legend card -->
+    <rect x="25" y="360" width="220" height="110" rx="10" fill="#020617" stroke="#334155" stroke-width="1.5"/>
+    <text x="40" y="385" fill="#f8fafc" font-size="11" font-weight="bold">ACTIVE GIS LAYERS</text>
+    <circle cx="46" cy="405" r="4" fill="#22c55e"/>
+    <text x="58" y="409" fill="#cbd5e1" font-size="10">Project Boundary (Shapefile)</text>
+    <circle cx="46" cy="425" r="4" fill="#38bdf8"/>
+    <text x="58" y="429" fill="#cbd5e1" font-size="10">Permanent Sample Plots (PSP)</text>
+    <circle cx="46" cy="445" r="4" fill="#f43f5e"/>
+    <text x="58" y="449" fill="#cbd5e1" font-size="10">Field Ranger GPS Patrol Track</text>
+  </g>
+
+  <!-- Right: Technical Details & Metrics Panel -->
+  <g transform="translate(760, 130)">
+    <!-- Card 1: Fast API GeoJSON API -->
+    <rect width="390" height="235" rx="16" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="0" y="0" width="390" height="38" rx="14" fill="#1e293b"/>
+    <text x="20" y="24" fill="#38bdf8" font-size="12" font-weight="bold">ENDPOINT: GET /api/v1/spatial/layers</text>
+
+    <text x="20" y="70" fill="#94a3b8" font-size="11">FastAPI Streaming Response (Pydantic v2)</text>
+    <text x="20" y="100" fill="#e2e8f0" font-size="11">• Coordinate Precision: 6 decimals</text>
+    <text x="20" y="125" fill="#e2e8f0" font-size="11">• Response Latency: &lt; 48ms (Cached)</text>
+    <text x="20" y="150" fill="#e2e8f0" font-size="11">• Compression: Gzip + GeoJSON Spec</text>
+    <text x="20" y="175" fill="#e2e8f0" font-size="11">• RBAC Masking: Applied for Client Tier</text>
+
+    <rect x="20" y="195" width="350" height="26" rx="6" fill="#0284c7" fill-opacity="0.2"/>
+    <text x="30" y="212" fill="#38bdf8" font-size="10">STATUS 200 OK — 14.8 KB Transferred</text>
+
+    <!-- Card 2: Heuristic Alert Engine -->
+    <g transform="translate(0, 260)">
+      <rect width="390" height="235" rx="16" fill="#0f172a" stroke="#f43f5e" stroke-width="2"/>
+      <rect x="0" y="0" width="390" height="38" rx="14" fill="#4c0519"/>
+      <text x="20" y="24" fill="#fb7185" font-size="12" font-weight="bold">AUTOMATED ANOMALY DETECTION ENGINE</text>
+
+      <text x="20" y="70" fill="#cbd5e1" font-size="11" font-weight="bold">Rule 1: Tree Mortality Threshold</text>
+      <text x="20" y="90" fill="#94a3b8" font-size="10">Triggers WARNING if survival &lt; 70%, CRITICAL &lt; 50%</text>
+
+      <text x="20" y="125" fill="#cbd5e1" font-size="11" font-weight="bold">Rule 2: Patrol Overdue Inactivity</text>
+      <text x="20" y="145" fill="#94a3b8" font-size="10">Auto-flags plots without GPS check-in for &gt; 30 days</text>
+
+      <text x="20" y="180" fill="#cbd5e1" font-size="11" font-weight="bold">Rule 3: Alert Deduplication Pipeline</text>
+      <text x="20" y="200" fill="#94a3b8" font-size="10">Throttles redundant emails &amp; dashboard alerts</text>
+    </g>
+  </g>
+</svg>
