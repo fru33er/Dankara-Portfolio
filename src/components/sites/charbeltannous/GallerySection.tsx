@@ -38,28 +38,26 @@ const DESIGNS: DesignItem[] = [
       "/sites/charbeltannous/grrrlgang/grrrlgang2-f.jpg",
       "/sites/charbeltannous/grrrlgang/grrrlgang3-f.jpg",
       "/sites/charbeltannous/grrrlgang/grrrlgang4-f.jpg",
-
     ],
     description:
-      "Exploration of high-contrast Swiss typography, geometric rules, and raw monochrome layouts for cultural exhibitions.",
-    tags: ["InDesign", "Illustrator", "Typography"],
+      "A personal poster design project experimenting with raw grunge style, distressed textures, and bold typography.",
+    tags: ["Grunge Style", "Poster Design", "Personal Project"],
     accentColor: "#cc1236",
   },
   {
     id: "sandoithci",
     title: "SANDOITCHI",
-    category: "Poster & Print",
+    category: "Branding",
     year: "2025",
     images: [
       "/sites/charbeltannous/sandoitchi/sando.jpg",
       "/sites/charbeltannous/sandoitchi/sando-pastel.jpg",
       "/sites/charbeltannous/sandoitchi/sando-pastel2.jpg",
       "/sites/charbeltannous/sandoitchi/sando2.jpg",
-
     ],
     description:
-      "Complete visual system including wordmark design, custom grid standards, color palettes, and print collateral for an indie coffee label.",
-    tags: ["Brand Identity", "Packaging", "Logo Design"],
+      "Visual identity and promotional design created for my Japanese fruit sando (fruit sandwich) small business.",
+    tags: ["Branding", "Fruit Sando", "Packaging"],
     accentColor: "#1a7444",
   },
   {
@@ -75,8 +73,8 @@ const DESIGNS: DesignItem[] = [
       "/sites/charbeltannous/thumbnail/maxresdefault (5).jpg",
     ],
     description:
-      "Distorted glyph anatomy and custom vector lettering inspired by heavy industrial signage and 90s acid graphics.",
-    tags: ["Custom Font", "Vector Craft", "Glyphs"],
+      "High-impact YouTube thumbnail artworks created while learning advanced photo manipulation and compositing techniques.",
+    tags: ["Photo Manipulation", "Compositing", "Photoshop"],
     accentColor: "#a50e2c",
   },
   {
