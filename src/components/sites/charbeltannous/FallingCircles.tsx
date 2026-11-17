@@ -276,11 +276,6 @@ export function FallingCircles() {
       mouse.vx *= 0.82;
       mouse.vy *= 0.82;
 
-      // Update obstacle positions every 6 frames or on active scroll
-      if (frameCount % 6 === 0) {
-        updateObstacles();
-      }
-
       ctx.clearRect(0, 0, width, height);
 
       for (let i = 0; i < balls.length; i++) {

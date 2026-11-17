@@ -76,37 +76,7 @@ const DESIGNS: DesignItem[] = [
       "High-impact YouTube thumbnail artworks created while learning advanced photo manipulation and compositing techniques.",
     tags: ["Photo Manipulation", "Compositing", "Photoshop"],
     accentColor: "#a50e2c",
-  },
-  {
-    id: "app-design-concept",
-    title: "Soundscape Audio Interface",
-    category: "UI/UX",
-    year: "2025",
-    description:
-      "Minimalist mobile UI exploration with gestural interactions, tactile tactile dials, and brutalist dark mode aesthetics.",
-    tags: ["Figma", "Design System", "Mobile App"],
-    accentColor: "#134a2a",
-  },
-  {
-    id: "exhibition-flyers",
-    title: "Echo Underground Gig Posters",
-    category: "Poster & Print",
-    year: "2024",
-    description:
-      "Limited edition risograph printed posters featuring duotone textures, halftone photography, and raw photocopy effects.",
-    tags: ["Risograph", "Printmaking", "Halftone"],
-    accentColor: "#cc1236",
-  },
-  {
-    id: "vector-illustrations",
-    title: "Cyber Flora Graphic Artwork",
-    category: "Illustration",
-    year: "2024",
-    description:
-      "A digital vector art series blending botanical organic shapes with hard-edged circuit geometry and neon gradients.",
-    tags: ["Vector Art", "Digital Art", "Merchandise"],
-    accentColor: "#1a7444",
-  },
+  }
 ];
 
 const CATEGORIES = [

@@ -122,10 +122,10 @@ export function CustomCursor() {
         className="fixed top-0 left-0 will-change-transform"
       >
         <div
-          className={`-translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-heading transition-all duration-200 ease-out ${
+          className={`h-9 w-9 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-heading transition-all duration-200 ease-out will-change-transform ${
             isHovered
-              ? "h-12 w-12 bg-heading/10"
-              : "h-7 w-7 bg-transparent"
+              ? "scale-125 bg-heading/10"
+              : "scale-75 bg-transparent"
           }`}
         />
       </div>
