@@ -456,3 +456,89 @@ div[data-panel-host] {
 [data-theme="blue"] .footer-vector {
   filter: brightness(0) saturate(100%) invert(18%) sepia(98%) saturate(6935%) hue-rotate(242deg) brightness(101%) contrast(107%);
 }
+
+/* ==========================================================================
+   Comprehensive Scroll Reveal System
+   ========================================================================== */
+
+.reveal-item,
+[data-reveal-state="hidden"] {
+  opacity: 0;
+  transform: translate3d(0, 44px, 0);
+  will-change: opacity, transform;
+  transition:
+    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+    clip-path 0.8s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Variant: Scale */
+.reveal-item[data-reveal="scale"],
+[data-reveal-state="hidden"][data-reveal="scale"] {
+  transform: translate3d(0, 36px, 0) scale(0.95);
+}
+
+/* Variant: Left */
+.reveal-item[data-reveal="left"],
+[data-reveal-state="hidden"][data-reveal="left"] {
+  transform: translate3d(-36px, 0, 0);
+}
+
+/* Variant: Right */
+.reveal-item[data-reveal="right"],
+[data-reveal-state="hidden"][data-reveal="right"] {
+  transform: translate3d(36px, 0, 0);
+}
+
+/* Variant: Clip */
+.reveal-item[data-reveal="clip"],
+[data-reveal-state="hidden"][data-reveal="clip"] {
+  clip-path: inset(0 0 100% 0);
+  transform: translate3d(0, 32px, 0);
+}
+
+/* Variant: Fade only */
+.reveal-item[data-reveal="fade"],
+[data-reveal-state="hidden"][data-reveal="fade"] {
+  transform: none;
+}
+
+/* Revealed State: active as user scrolls into view */
+.reveal-item.is-revealed,
+[data-reveal-state="visible"] {
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0) scale(1) !important;
+  clip-path: inset(0 0 0 0) !important;
+}
+
+/* Initial Hero Entrance */
+@keyframes hero-reveal-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 32px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-hero-in {
+  animation: hero-reveal-up 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-item,
+  [data-reveal-state="hidden"] {
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+    transition: none !important;
+  }
+  .animate-hero-in {
+    animation: none !important;
+  }
+}

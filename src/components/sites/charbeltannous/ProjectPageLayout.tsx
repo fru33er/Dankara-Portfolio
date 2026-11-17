@@ -174,23 +174,32 @@ export function ProjectPageLayout(props: ProjectDetailProps) {
 
         {/* Project Hero Header */}
         <section className="pt-12 pb-10">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 animate-hero-in">
             <span className="inline-block h-3 w-3 rounded-full bg-primary" />
             <span className="font-mono text-xs font-bold uppercase tracking-widest text-label">
               Project Case Study {"//"} {role}
             </span>
           </div>
 
-          <h1 className="mt-4 font-display text-5xl sm:text-7xl lg:text-8xl font-black uppercase tracking-tight leading-[0.9] text-heading">
+          <h1
+            className="mt-4 font-display text-5xl sm:text-7xl lg:text-8xl font-black uppercase tracking-tight leading-[0.9] text-heading animate-hero-in"
+            style={{ animationDelay: "70ms" }}
+          >
             {title}
           </h1>
 
-          <p className="mt-6 max-w-3xl font-mono text-base sm:text-lg uppercase tracking-wide text-subtle font-medium">
+          <p
+            className="mt-6 max-w-3xl font-mono text-base sm:text-lg uppercase tracking-wide text-subtle font-medium animate-hero-in"
+            style={{ animationDelay: "140ms" }}
+          >
             {tagline}
           </p>
 
           {/* Action CTAs */}
-          <div className="mt-8 flex flex-wrap gap-4 items-center">
+          <div
+            className="mt-8 flex flex-wrap gap-4 items-center animate-hero-in"
+            style={{ animationDelay: "210ms" }}
+          >
             {externalUrl && (
               <a
                 href={externalUrl}
@@ -216,7 +225,10 @@ export function ProjectPageLayout(props: ProjectDetailProps) {
           {/* Main Column: Overview & Highlights */}
           <div className="lg:col-span-2 flex flex-col gap-8">
             {/* Overview Card */}
-            <div className="rounded-3xl border-3 border-heading bg-raised p-8 shadow-[6px_6px_0_var(--text-heading)]">
+            <div
+              data-reveal="up"
+              className="rounded-3xl border-3 border-heading bg-raised p-8 shadow-[6px_6px_0_var(--text-heading)]"
+            >
               <div className="flex items-center gap-2.5 border-b-2 border-heading/30 pb-4 font-mono text-xs font-bold uppercase tracking-widest text-heading">
                 <Terminal className="h-4 w-4 text-primary" />
                 <span>Executive Overview</span>
@@ -227,7 +239,11 @@ export function ProjectPageLayout(props: ProjectDetailProps) {
             </div>
 
             {/* Highlights Grid */}
-            <div className="rounded-3xl border-3 border-heading bg-raised p-8 shadow-[6px_6px_0_var(--text-heading)]">
+            <div
+              data-reveal="up"
+              data-reveal-delay="80"
+              className="rounded-3xl border-3 border-heading bg-raised p-8 shadow-[6px_6px_0_var(--text-heading)]"
+            >
               <div className="flex items-center gap-2.5 border-b-2 border-heading/30 pb-4 font-mono text-xs font-bold uppercase tracking-widest text-heading">
                 <Sparkles className="h-4 w-4 text-accent" />
                 <span>Key Engineering Highlights</span>
@@ -237,6 +253,8 @@ export function ProjectPageLayout(props: ProjectDetailProps) {
                 {highlights.map((item, idx) => (
                   <div
                     key={idx}
+                    data-reveal="scale"
+                    data-reveal-delay={String((idx % 2) * 90)}
                     className="flex flex-col justify-between rounded-2xl border-2 border-heading bg-page p-5 shadow-[3px_3px_0_var(--text-heading)]"
                   >
                     <div>
@@ -259,7 +277,11 @@ export function ProjectPageLayout(props: ProjectDetailProps) {
           {/* Sidebar Column: Specifications & Tags */}
           <div className="flex flex-col gap-8">
             {/* Project Specifications */}
-            <div className="rounded-3xl border-3 border-heading bg-raised p-6 shadow-[6px_6px_0_var(--text-heading)]">
+            <div
+              data-reveal="up"
+              data-reveal-delay="100"
+              className="rounded-3xl border-3 border-heading bg-raised p-6 shadow-[6px_6px_0_var(--text-heading)]"
+            >
               <div className="flex items-center gap-2.5 border-b-2 border-heading/30 pb-4 font-mono text-xs font-bold uppercase tracking-widest text-heading">
                 <Layers className="h-4 w-4 text-primary" />
                 <span>Specifications</span>
@@ -288,7 +310,11 @@ export function ProjectPageLayout(props: ProjectDetailProps) {
             </div>
 
             {/* Tech Stack Pills */}
-            <div className="rounded-3xl border-3 border-heading bg-raised p-6 shadow-[6px_6px_0_var(--text-heading)]">
+            <div
+              data-reveal="up"
+              data-reveal-delay="180"
+              className="rounded-3xl border-3 border-heading bg-raised p-6 shadow-[6px_6px_0_var(--text-heading)]"
+            >
               <h3 className="font-mono text-xs font-bold uppercase tracking-widest text-label border-b-2 border-heading/30 pb-3">
                 Technologies & Tools
               </h3>
@@ -310,7 +336,10 @@ export function ProjectPageLayout(props: ProjectDetailProps) {
         {media && media.length > 0 && (
           <section className="mt-12">
             {/* Showcase Header */}
-            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b-2 border-heading pb-6">
+            <div
+              data-reveal="up"
+              className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b-2 border-heading pb-6"
+            >
               <div>
                 <div className="flex items-center gap-2.5 font-mono text-xs font-bold uppercase tracking-widest text-primary">
                   <Film className="h-4 w-4" />
@@ -342,6 +371,8 @@ export function ProjectPageLayout(props: ProjectDetailProps) {
                 return (
                   <div
                     key={idx}
+                    data-reveal="scale"
+                    data-reveal-delay={String((idx % 2) * 100)}
                     className={`flex flex-col justify-between rounded-3xl border-3 border-heading bg-raised p-5 sm:p-6 shadow-[6px_6px_0_var(--text-heading)] transition-all hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0_var(--text-heading)] ${
                       isFull ? "lg:col-span-2" : "lg:col-span-1"
                     }`}
@@ -459,7 +490,11 @@ export function ProjectPageLayout(props: ProjectDetailProps) {
         )}
 
         {/* Footer Navigation (Prev / Next Projects) */}
-        <nav aria-label="Project Navigation" className="mt-16 border-t-2 border-heading pt-8">
+        <nav
+          aria-label="Project Navigation"
+          data-reveal="up"
+          className="mt-16 border-t-2 border-heading pt-8"
+        >
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             {prevUrl ? (
               <Link

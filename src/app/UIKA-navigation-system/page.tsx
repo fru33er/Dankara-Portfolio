@@ -11,8 +11,8 @@ export default function UIKANavigationSystemPage() {
   return (
     <ProjectPageLayout
       title="UIKA Navigator"
-      index="03"
-      total="03"
+      index="02"
+      total="02"
       year="2026"
       role="Lead Android & AR Engineer (Bachelor's Thesis)"
       tagline="Outdoor Augmented Reality & Computer Vision Campus Wayfinding System for Faculty Buildings & Landmark Discovery."
@@ -83,10 +83,8 @@ export default function UIKANavigationSystemPage() {
           fit: "contain",
         },
       ]}
-      prevUrl="/lock-timer"
-      prevTitle="Lock-timer"
-      nextUrl="/satubumi"
-      nextTitle="Satubumi"
+      prevUrl="/satubumi"
+      prevTitle="Satubumi"
     />
   );
 }

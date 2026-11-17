@@ -195,7 +195,7 @@ export function BallCatcherSection() {
         {/* Section Header */}
         <div data-field-protect="true" className="relative flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
-            <div className="flex items-center gap-3">
+            <div data-reveal="up" className="flex items-center gap-3">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary font-mono text-xs text-page font-bold">
                 03
               </span>
@@ -209,12 +209,18 @@ export function BallCatcherSection() {
             <h2
               id="ball-catcher-heading"
               data-motion="heading"
+              data-reveal="clip"
+              data-reveal-delay="80"
               className="text-heading mt-2 leading-[0.85] font-bold"
               style={{ fontSize: "clamp(3.5rem, 8vw, 7.5rem)" }}
             >
               CATCH THE FALL
             </h2>
-            <p className="mt-3 max-w-xl font-mono text-xs uppercase tracking-wider text-label flex flex-wrap items-center gap-1.5">
+            <p
+              data-reveal="up"
+              data-reveal-delay="140"
+              className="mt-3 max-w-xl font-mono text-xs uppercase tracking-wider text-label flex flex-wrap items-center gap-1.5"
+            >
               <span>Slide your mouse across the runway below to catch the live falling</span>
               <span className="inline-flex items-center gap-1 font-bold text-heading">
                 <span
@@ -235,7 +241,11 @@ export function BallCatcherSection() {
           </div>
 
           {/* HUD Badges */}
-          <div className="flex flex-wrap items-center gap-3 font-mono text-sm uppercase">
+          <div
+            data-reveal="up"
+            data-reveal-delay="180"
+            className="flex flex-wrap items-center gap-3 font-mono text-sm uppercase"
+          >
             <div className="flex items-center gap-2 rounded-xl border-2 border-heading bg-raised px-4 py-2 shadow-[2px_2px_0_var(--text-heading)]">
               <Flame className="h-4 w-4 text-primary" />
               <span>Streak: <strong className="tabular-nums text-base">{combo}x</strong></span>
@@ -265,6 +275,8 @@ export function BallCatcherSection() {
         {/* The Live Interactive Runway Track */}
         <div
           ref={runwayRef}
+          data-reveal="scale"
+          data-reveal-delay="200"
           onMouseMove={handlePointerMove}
           onTouchMove={handlePointerMove}
           onMouseEnter={() => setIsHovering(true)}

@@ -12,7 +12,7 @@ export default function SatubumiPage() {
     <ProjectPageLayout
       title="Satubumi"
       index="01"
-      total="03"
+      total="02"
       year="2026"
       role="Backend & Geospatial Engineer"
       tagline="Production Backend API, Rapid-FS Scoring Engine & Digital MRV Platform for Nature-Based Solutions."
@@ -70,7 +70,7 @@ export default function SatubumiPage() {
       media={[
         {
           type: "image",
-          src: "/sites/charbeltannous/satubumi/rapid-fs-architecture.svg",
+          src: "/sites/charbeltannous/satubumi/saatubumi2.png",
           title: "Rapid-FS 7-Stage Carbon Feasibility Pipeline",
           caption:
             "Production architecture demonstrating automated ESRI Shapefile ingestion, PyProj WGS84 coordinate reprojection, 5-pillar carbon scoring, and automated PDF dossier publishing.",
@@ -78,7 +78,7 @@ export default function SatubumiPage() {
         },
         {
           type: "image",
-          src: "/sites/charbeltannous/satubumi/digital-mrv-telemetry.svg",
+          src: "/sites/charbeltannous/satubumi/satubumi3.png",
           title: "Digital MRV Multi-Layer GIS Map & Heuristic Alert Engine",
           caption:
             "FastAPI streaming endpoints delivering 7 GeoJSON spatial layers (project boundaries, sample plots, ranger patrol GPS routes) alongside automated tree survival anomaly triggers.",
@@ -87,8 +87,8 @@ export default function SatubumiPage() {
       ]}
       externalUrl="https://satubumi.org"
       externalLabel="Visit Satubumi ↗"
-      nextUrl="/lock-timer"
-      nextTitle="Lock-timer"
+      nextUrl="/UIKA-navigation-system"
+      nextTitle="UIKA Navigator"
     />
   );
 }

@@ -25,6 +25,7 @@ export function Footer() {
       <div className="mx-auto w-full max-w-[1800px] flex flex-col gap-8">
         <h2
           id="footer-heading"
+          data-reveal="clip"
           className="font-display text-heading w-fit text-[length:clamp(2.5rem,1rem+6vw,7rem)] leading-[0.92] font-bold"
         >
           <span className="block">Everything ends</span>
@@ -36,7 +37,11 @@ export function Footer() {
           </span>
         </h2>
 
-        <div className="relative flex w-fit flex-col gap-2">
+        <div
+          data-reveal="up"
+          data-reveal-delay="120"
+          className="relative flex w-fit flex-col gap-2"
+        >
           <p className="font-mono text-[length:var(--type-caption)] font-medium tracking-(--tracking-mono) uppercase">
             <span className="text-label">SAY HI</span>
           </p>
@@ -93,6 +98,8 @@ export function Footer() {
         {/* Buoy Links Bar */}
         <nav
           aria-label="Footer links"
+          data-reveal="up"
+          data-reveal-delay="100"
           className="relative flex flex-wrap justify-center sm:justify-start gap-4 sm:gap-8 items-center"
         >
           {/* GitHub Buoy */}
@@ -168,6 +175,8 @@ export function Footer() {
       {/* Vector Graphic at the very bottom of the website */}
       <div
         data-no-obstacle="true"
+        data-reveal="up"
+        data-reveal-delay="120"
         aria-hidden="true"
         className="pointer-events-none relative -mx-[var(--space-inline)] -mb-12 mt-16 w-[calc(100%+var(--space-inline)*2)] select-none overflow-hidden"
       >

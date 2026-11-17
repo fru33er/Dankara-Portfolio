@@ -146,6 +146,7 @@ export function GuestbookSection() {
         <h2
           id="guestbook-heading"
           data-motion="heading"
+          data-reveal="clip"
           className="text-heading px-inline leading-[0.8] font-bold"
           style={{ fontSize: "clamp(5rem, 12vw, 11rem)" }}
         >
@@ -158,6 +159,8 @@ export function GuestbookSection() {
         </h2>
         <p
           data-chrome="true"
+          data-reveal="up"
+          data-reveal-delay="80"
           className="text-label px-inline mt-2 font-mono text-[length:var(--type-caption)] tracking-(--tracking-mono) uppercase"
         >
           Signatures
@@ -168,6 +171,8 @@ export function GuestbookSection() {
       <div
         role="group"
         aria-label="The wall. Draw to sign it."
+        data-reveal="scale"
+        data-reveal-delay="120"
         className="group relative mt-8 w-full select-none cursor-crosshair border-y border-heading/20"
         style={{
           aspectRatio: "1600 / 820",
@@ -197,7 +202,11 @@ export function GuestbookSection() {
       </div>
 
       {/* Floating Pen Dock */}
-      <div className="pointer-events-none flex justify-center h-14 -mt-16 sticky bottom-6 z-10">
+      <div
+        data-reveal="up"
+        data-reveal-delay="180"
+        className="pointer-events-none flex justify-center h-14 -mt-16 sticky bottom-6 z-10"
+      >
         <div className="pointer-events-auto flex items-center gap-2 rounded-full border-2 border-heading bg-raised px-4 py-2 shadow-[3px_3px_0_var(--text-heading)]">
           <div className="flex items-center gap-2">
             <PenLine className="h-4 w-4 text-heading" />

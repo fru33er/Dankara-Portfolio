@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ScrollReveal } from "@/components/sites/charbeltannous/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Raka Andhika — Software Engineer",
@@ -38,6 +39,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col bg-page text-heading selection:bg-heading selection:text-page font-body">
+        <ScrollReveal />
         {children}
       </body>
     </html>

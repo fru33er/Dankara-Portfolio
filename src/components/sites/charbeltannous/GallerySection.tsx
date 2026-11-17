@@ -165,23 +165,38 @@ export function GallerySection() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div>
-            <p className="text-label font-mono text-[length:var(--type-caption)] font-medium tracking-(--tracking-mono) uppercase flex items-center gap-2">
+            <p
+              data-reveal="up"
+              className="text-label font-mono text-[length:var(--type-caption)] font-medium tracking-(--tracking-mono) uppercase flex items-center gap-2"
+            >
               <Sparkles className="w-3.5 h-3.5" />
               <span>DESIGN VAULT ({DESIGNS.length.toString().padStart(2, "0")})</span>
             </p>
-            <h2 className="mt-3 text-[length:var(--type-h2)] leading-[1.1] font-bold text-heading">
+            <h2
+              data-reveal="clip"
+              data-reveal-delay="80"
+              className="mt-3 text-[length:var(--type-h2)] leading-[1.1] font-bold text-heading"
+            >
               Graphic Design &amp; Visual Works.
             </h2>
           </div>
 
-          <p className="max-w-[45ch] text-sm md:text-base font-body text-heading/90 leading-relaxed">
+          <p
+            data-reveal="up"
+            data-reveal-delay="140"
+            className="max-w-[45ch] text-sm md:text-base font-body text-heading/90 leading-relaxed"
+          >
             Poster art, typography experiments, visual identity, and creative
             explorations created alongside code.
           </p>
         </div>
 
         {/* Filter Category Pills */}
-        <div className="mt-8 flex flex-wrap gap-2 pt-2">
+        <div
+          data-reveal="up"
+          data-reveal-delay="180"
+          className="mt-8 flex flex-wrap gap-2 pt-2"
+        >
           {CATEGORIES.map((cat) => {
             const isActive = activeCategory === cat;
             return (
@@ -210,6 +225,9 @@ export function GallerySection() {
             return (
               <article
                 key={item.id}
+                data-reveal="scale"
+                data-reveal-delay={String((idx % 3) * 90)}
+                data-reveal-eager="true"
                 onClick={() => handleOpenDesign(item)}
                 className="group relative rounded-2xl border-2 border-heading bg-raised p-4 flex flex-col justify-between overflow-hidden shadow-[4px_4px_0_var(--text-heading)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[6px_6px_0_var(--text-heading)] cursor-pointer"
               >

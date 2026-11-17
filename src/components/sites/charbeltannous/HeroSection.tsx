@@ -14,7 +14,7 @@ export function HeroSection() {
         style={{ "--headline-aspect": 1.55566 } as React.CSSProperties}
       >
         <div data-field-protect="true" className="flex flex-col items-start justify-between md:flex-row md:gap-4">
-          <div className="w-full min-w-0">
+          <div className="w-full min-w-0 animate-hero-in">
             <Header />
           </div>
         </div>
@@ -24,7 +24,8 @@ export function HeroSection() {
           <div className="flex-1 flex items-center justify-center py-4 w-full">
             <div
               data-motion="headline"
-              className="relative w-full select-none"
+              className="relative w-full select-none animate-hero-in"
+              style={{ animationDelay: "100ms" }}
             >
               <h1 className="sr-only">Raka Andhika</h1>
               <Wordmark className="text-heading max-h-[60vh] md:max-h-[68vh]" />
@@ -34,7 +35,8 @@ export function HeroSection() {
           <div className="border-line relative border-t pt-4">
             <div
               data-motion="intro"
-              className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between"
+              className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between animate-hero-in"
+              style={{ animationDelay: "220ms" }}
             >
               <p className="max-w-[600px] font-mono text-[length:var(--type-tagline)] leading-[1.5] font-medium tracking-(--tracking-mono) uppercase md:leading-[1.2]">
                 <span className="block">Software engineer, graphic designer — Bogor, Indonesia</span>
