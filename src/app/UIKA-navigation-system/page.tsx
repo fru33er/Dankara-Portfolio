@@ -74,7 +74,7 @@ export default function UIKANavigationSystemPage() {
       media={[
         {
           type: "image",
-          src: "/sites/charbeltannous/uika-navigation-system/Frame 1.png",
+          src: "/sites/charbeltannous/uika-navigation-system/Frame 1.webp",
           title: "Outdoor ARCore & ML Kit Computer Vision Pipeline",
           caption:
             "Four-phase pipeline showing building plaque OCR pose alignment, outdoor A* walkway pathfinding, Bézier trajectory smoothing, and SceneView 3D rendering.",

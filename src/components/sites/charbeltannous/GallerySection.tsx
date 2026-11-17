@@ -33,11 +33,11 @@ const DESIGNS: DesignItem[] = [
     category: "Poster & Print",
     year: "2025",
     images: [
-      "/sites/charbeltannous/grrrlgang/grrrlgang-submit.jpg",
-      "/sites/charbeltannous/grrrlgang/grrrlgang-f.jpg",
-      "/sites/charbeltannous/grrrlgang/grrrlgang2-f.jpg",
-      "/sites/charbeltannous/grrrlgang/grrrlgang3-f.jpg",
-      "/sites/charbeltannous/grrrlgang/grrrlgang4-f.jpg",
+      "/sites/charbeltannous/grrrlgang/grrrlgang-submit.webp",
+      "/sites/charbeltannous/grrrlgang/grrrlgang-f.webp",
+      "/sites/charbeltannous/grrrlgang/grrrlgang2-f.webp",
+      "/sites/charbeltannous/grrrlgang/grrrlgang3-f.webp",
+      "/sites/charbeltannous/grrrlgang/grrrlgang4-f.webp",
     ],
     description:
       "A personal poster design project experimenting with raw grunge style, distressed textures, and bold typography.",
@@ -50,10 +50,10 @@ const DESIGNS: DesignItem[] = [
     category: "Branding",
     year: "2025",
     images: [
-      "/sites/charbeltannous/sandoitchi/sando.jpg",
-      "/sites/charbeltannous/sandoitchi/sando-pastel.jpg",
-      "/sites/charbeltannous/sandoitchi/sando-pastel2.jpg",
-      "/sites/charbeltannous/sandoitchi/sando2.jpg",
+      "/sites/charbeltannous/sandoitchi/sando.webp",
+      "/sites/charbeltannous/sandoitchi/sando-pastel.webp",
+      "/sites/charbeltannous/sandoitchi/sando-pastel2.webp",
+      "/sites/charbeltannous/sandoitchi/sando2.webp",
     ],
     description:
       "Visual identity and promotional design created for my Japanese fruit sando (fruit sandwich) small business.",
@@ -66,11 +66,11 @@ const DESIGNS: DesignItem[] = [
     category: "Poster & Print",
     year: "2025",
     images: [
-      "/sites/charbeltannous/thumbnail/maxresdefault (1).jpg",
-      "/sites/charbeltannous/thumbnail/maxresdefault (2).jpg",
-      "/sites/charbeltannous/thumbnail/maxresdefault (3).jpg",
-      "/sites/charbeltannous/thumbnail/maxresdefault (4).jpg",
-      "/sites/charbeltannous/thumbnail/maxresdefault (5).jpg",
+      "/sites/charbeltannous/thumbnail/maxresdefault (1).webp",
+      "/sites/charbeltannous/thumbnail/maxresdefault (2).webp",
+      "/sites/charbeltannous/thumbnail/maxresdefault (3).webp",
+      "/sites/charbeltannous/thumbnail/maxresdefault (4).webp",
+      "/sites/charbeltannous/thumbnail/maxresdefault (5).webp",
     ],
     description:
       "High-impact YouTube thumbnail artworks created while learning advanced photo manipulation and compositing techniques.",

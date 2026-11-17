@@ -70,7 +70,7 @@ export default function SatubumiPage() {
       media={[
         {
           type: "image",
-          src: "/sites/charbeltannous/satubumi/saatubumi2.png",
+          src: "/sites/charbeltannous/satubumi/saatubumi2.webp",
           title: "Rapid-FS 7-Stage Carbon Feasibility Pipeline",
           caption:
             "Production architecture demonstrating automated ESRI Shapefile ingestion, PyProj WGS84 coordinate reprojection, 5-pillar carbon scoring, and automated PDF dossier publishing.",
@@ -78,7 +78,7 @@ export default function SatubumiPage() {
         },
         {
           type: "image",
-          src: "/sites/charbeltannous/satubumi/satubumi3.png",
+          src: "/sites/charbeltannous/satubumi/satubumi3.webp",
           title: "Digital MRV Multi-Layer GIS Map & Heuristic Alert Engine",
           caption:
             "FastAPI streaming endpoints delivering 7 GeoJSON spatial layers (project boundaries, sample plots, ranger patrol GPS routes) alongside automated tree survival anomaly triggers.",

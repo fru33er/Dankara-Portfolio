@@ -33,7 +33,7 @@ const PROJECTS: Project[] = [
     description:
       "Production-grade backend API and geospatial engine powering Nature-Based Solutions (NbS) and carbon feasibility. Ships automated Shapefile parsing, Google Earth Engine satellite telemetry, real-time ecological alerts, and automated MRV reports.",
     accent: "var(--surface-accent-1)",
-    image: "/sites/charbeltannous/satubumi/satubumi.png",
+    image: "/sites/charbeltannous/satubumi/satubumi.webp",
     // imageFit: "cover", // pakai "contain" jika gambar PNG transparan / mockup
     exploreUrl: "/satubumi",
     externalUrl: "https://satubumi.org",
@@ -50,7 +50,7 @@ const PROJECTS: Project[] = [
     description:
       "Outdoor Augmented Reality campus navigation system designed to guide students and visitors across Universitas Ibn Khaldun Bogor to locate faculty buildings and campus facilities. Powered by Google ARCore, ML Kit OCR building plaque pose alignment, an A* spatial graph pathfinding engine with Bézier Spline trajectory smoothing, and real-time Firestore sync.",
     accent: "var(--surface-accent-1)",
-    image: "/sites/charbeltannous/uika-navigation-system/Frame 1.png",
+    image: "/sites/charbeltannous/uika-navigation-system/Frame 1.webp",
     imageFit: "contain",
     exploreUrl: "/UIKA-navigation-system",
   },
