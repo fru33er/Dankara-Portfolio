@@ -181,10 +181,10 @@ export function Footer() {
         className="pointer-events-none relative -mx-[var(--space-inline)] -mb-12 mt-16 w-[calc(100%+var(--space-inline)*2)] select-none overflow-hidden will-change-transform transform-gpu [contain:paint_layout]"
       >
         <Image
-          src="/sites/charbeltannous/Vector.webp"
+          src="/sites/charbeltannous/Vector.svg"
           alt=""
-          width={3200}
-          height={1057}
+          width={4096}
+          height={1353}
           unoptimized
           loading="lazy"
           className="footer-vector block h-auto w-full pointer-events-none select-none transform-gpu"
